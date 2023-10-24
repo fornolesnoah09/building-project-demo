@@ -1,0 +1,14 @@
+.dashboard-title {
+    font-weight: 500;
+}
+
+.card-value {
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.custom-badge {
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
