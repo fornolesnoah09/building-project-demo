@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,12 +34,51 @@
         </nav>
     </div>
 
-    <ul class="sidenav" id="slide-out">
-        <li><a href="">Buy Now</a></li>
-        <li><a href="">Notifications</a></li>
+    <ul class="sidenav blue black-text" id="slide-out">
+        <div class="container">
+            <div class="row">
+                <div class="col s3">
+                    <h5 class="sidenav-logo"><i class="fa-brands fa-vaadin small"></i></h5>
+                </div>
+                <div class="col s9">
+                    <h5 class="sidenav-logo">Admin</h5>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons right arrow-drop">arrow_drop_down</i>PAGES
+                </div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns fa-lg"></i>Dashboard</a>
+                            <a href=""><i class="fa-regular fa-chart-bar fa-lg"></i>Fixed Chart</a>
+                            <a href=""><i class="fa-solid fa-table-cells-large fa-lg"></i>Grid</a>
+                            <a href=""><i class="fa-solid fa-message fa-lg"></i>Chat</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons right arrow-drop">arrow_drop_down</i>CHARTS
+                </div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns fa-lg"></i>Line Charts</a>
+                            <a href=""><i class="fa-regular fa-chart-bar fa-lg"></i>Bar Charts</a>
+                            <a href=""><i class="fa-solid fa-table-cells-large fa-lg"></i>Area Charts</a>
+                            <a href=""><i class="fa-solid fa-message fa-lg"></i>Doughnut Charts</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </ul>
 
-    
+
     <div class="container">
 
         <!-- dashboard -->
@@ -128,11 +166,11 @@
                     <div class="row">
                         <div class="col s4">
                             <h5>Updates</h5>
-                            <h6 class="custom-badge red white-text">refund</h6>
+                            <h6 class="custom-badge red black-text">refund</h6>
                             <p>Chang</p>
-                            <h6 class="custom-badge green white-text">purchased</h6>
+                            <h6 class="custom-badge green black-text">purchased</h6>
                             <p>Chang</p>
-                            <h6 class="custom-badge red white-text">refund</h6>
+                            <h6 class="custom-badge red black-text">refund</h6>
                             <p>Chang</p>
                         </div>
                         <div class="col s8">
@@ -160,16 +198,63 @@
                 </div>
             </div>
 
+            <div class="col s12 m6 card-panel z-depth-0">
+                <img src="images/line-chart.jpg " alt="" class="responsive-img">
+
+                <div class="card-panel">
+                    <img src="images/circle-chart.jpg" alt="" class="responsive-img z-depth-1">
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- <div style="height: 100px"></div> -->
 
-
-
-    <div style="height: 100px"></div>
+    <footer class="page-footer white z-depth-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m3">
+                    <img class="responsive-img" src="//themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" alt="Materialize">
+                    <p class="grey-text footer-text">Made with love by Materialize</p>
+                </div>
+                <div class="col s12 m3">
+                    <h5 class="black-text">About</h5>
+                    <a href="" class="grey-text">Blog</a>
+                    <br>
+                    <a href="" class="grey-text">Pricing</a>
+                    <br>
+                    <a href="" class="grey-text">Docs</a>
+                </div>
+                <div class="col s12 m3">
+                    <h5 class="black-text">Connect</h5>
+                    <a href="" class="grey-text">Community</a>
+                    <br>
+                    <a href="" class="grey-text">Subscribe</a>
+                    <br>
+                    <a href="" class="grey-text">Email</a>
+                </div>
+                <div class="col s12 m3">
+                    <h5 class="black-text">Contact</h5>
+                    <a href="" class="grey-text">Facebook</a>
+                    <br>
+                    <a href="" class="grey-text">Twitter</a>
+                    <br>
+                    <a href="" class="grey-text">Github</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-copyright white">
+            <div class="container black-text">
+                <span class="grey-text">© 2014 Copyright Text</span>
+                <a class="grey-text right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- jquery link -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- font awesome personal link -->
     <script src="https://kit.fontawesome.com/689a514355.js" crossorigin="anonymous"></script>
     <!-- materialize js link -->
@@ -179,15 +264,14 @@
     <script src="js/chart.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.sidenav').sidenav({
                 edge: "left",
                 inDuration: 300,
                 outDuration: 300
             });
+            $('.collapsible').collapsible();
         });
     </script>
-
 </body>
-
 </html>
